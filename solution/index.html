@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <script src="https://kit.fontawesome.com/yourcode.js"></script>
+
+        <title>Check Out</title>
+    </head>
+    <body>
+        <h1>Checkout</h1>
+        
+        <form class="checkoutForm" id="checkoutForm" action="#">
+
+            <section class="checkoutForm__basket">
+                <div class="checkoutForm__basket__product">
+                    <img src="./images/photo1.png" alt="VintageB">
+                    <label>Vintage Backbag</label> 
+                    <p><span>$54.99</span> <span>$94.99</span></p>
+                    <div class="checkoutForm__basket__product__counter">
+                        <div><i class="fa fa-minus"></i></div>
+                        <p>1</p>
+                        <div><i class="fa fa-plus"></i></div>
+                    </div>
+                </div>
+
+                <div class="checkoutForm__basket__product">
+                    <img src="./images/photo2.png" alt="VintageB">
+                    <label>Levi Shoes</label> 
+                    <p><span>$74.99</span> <span>$124.99</span></p>
+                    <div class="checkoutForm__basket__product__counter">
+                        <div><i class="fa fa-minus"></i></div>
+                        <p>1</p>
+                        <div><i class="fa fa-plus"></i></div>
+                    </div>
+                </div>
+
+                <div class="checkoutForm__basket__shipping">
+                    <label>Shipping</label>
+                    <p>$19</p>
+                </div>
+
+                <div class="checkoutForm__basket__total">
+                    <label>Total</label>
+                    <p>$148.98</p>
+                </div>
+            </section>  
+
+            <section class="checkoutForm__contact">
+
+                <div class="checkoutForm__contact__title">
+                    <h2>Contact information</h2>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div>
+                    <label for="phone">Phone</label>
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone" required>
+                </div>
+            </section>
+
+            <section class="checkoutForm__address">
+
+
+                <div class="checkoutForm__address__title">
+                    <h2>Shipping Address</h2>
+                </div>
+
+
+                <div>
+                    <label for="name">Full Name</label>
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="fullName" id="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div>
+                    <label for="address">Address</label>
+                    <i class="fas fa-address-card"></i>
+                    <input type="text" name="address" id="address" placeholder="Enter your address" required>
+                </div>
+
+                <div>
+                    <label for="city">City</label>
+                    <i class="fas fa-city"></i>
+                    <input type="text" name="city" id="city" placeholder="Enter your city" required>
+                </div>
+                <div class="checkoutForm__address__country-postCode">
+                    <div>
+                        <label for="country">Country</label>
+                        <i class="fas fa-globe-europe"></i>
+                        <select name="country" id="country">
+                            <option value="turkey" selected>Turkey</option>
+                            <option value="germany">Germany</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                            <option value="uk">UK</option>
+                        </select>
+                    </div>
+
+
+                    <div>
+                        <label for="postCode">PostCode</label>
+                        <i class="fas fa-mail-bulk"></i>
+                        <input type="text" name="postCode" id="postCode" placeholder="Enter your post code" required>
+                    </div>
+                </div>
+                <div class="checkoutForm__address__info">
+                    <input type="checkbox" name="saveInfo" id="info" required> <p>See this information next time</p> 
+                </div>
+
+            </section>
+        </form>
+
+        <div id="buttonHolder">
+            <input id="submit" type="submit" value="Continue" form="checkoutForm">
+        </div>
+    </body>
+</html>

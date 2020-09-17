@@ -1,0 +1,72 @@
+@mixin perfectCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+
+@mixin inputOrder {
+    label, input {
+        display: block;
+        box-sizing: border-box;
+    }
+}
+
+@mixin firstWidth {
+    .checkoutForm__contact input,
+    .checkoutForm__address input,
+    .checkoutForm__address select,
+    .checkoutForm__contact__title,
+    .checkoutForm__address__title,
+    .checkoutForm__address__info {
+        width: 37rem;
+    }
+    .checkoutForm__basket {
+        width: 35rem !important;
+    }
+
+    .checkoutForm__address__country-postCode {
+        display: flex;
+        div:nth-child(1){
+            select{
+                width: 19rem;
+            }
+            margin-right: 2rem;
+        }
+        div:nth-child(2){
+            input{
+                width: 16rem;
+            }
+        }
+    }
+}
+
+@mixin secondWidth {
+    .checkoutForm__contact input,
+    .checkoutForm__address input,
+    .checkoutForm__address select,
+    .checkoutForm__contact__title,
+    .checkoutForm__address__title,
+    .checkoutForm__address__info {
+        width: 40rem;
+    }
+    .checkoutForm__basket {
+        width: 38rem !important;
+    }
+
+    .checkoutForm__address__country-postCode {
+        display: flex;
+        div:nth-child(1){
+            select{
+                width: 21rem;
+            }
+            margin-right: 2rem;
+        }
+        div:nth-child(2){
+            input{
+                width: 17rem;
+            }
+        }
+    }
+}
